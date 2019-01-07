@@ -11,12 +11,12 @@ then
     echo "Supported target ABIs: armeabi, armeabi-v7a, x86, x86_64, arm64-v8a, mips, mips64"
     echo
     echo "Example using GCC 4.8, NDK 10e, OpenSSL 1.0.2d and Android API 21 for armeabi-v7a."
-    echo "./openssl-build /home/user/android-ndk-r10e \\"
-    echo "                /home/user/openssl-1.0.2d \\"
+    echo "./openssl-build /opt/pj/android-ndk-r10e \\"
+    echo "                /opt/pj/openssl-1.0.2d \\"
     echo "                21 \\"
     echo "                armeabi-v7a \\"
     echo "                4.8 \\"
-    echo "                /home/user/output/armeabi-v7a"
+    echo "                /opt/pj/output/armeabi-v7a"
     exit 1
 fi
 
@@ -28,7 +28,7 @@ OPENSSL_GCC_VERSION=$5
 OPENSSL_OUTPUT_PATH=$6
 
 NDK_MAKE_TOOLCHAIN="$NDK_DIR/build/tools/make-standalone-toolchain.sh"
-OPENSSL_TMP_FOLDER="/tmp/openssl"
+OPENSSL_TMP_FOLDER="/opt/pj/tmp/openssl"
 rm -rf "$OPENSSL_TMP_FOLDER"
 mkdir -p "$OPENSSL_TMP_FOLDER"
 cp -r ${OPENSSL_BASE_FOLDER}/* ${OPENSSL_TMP_FOLDER}

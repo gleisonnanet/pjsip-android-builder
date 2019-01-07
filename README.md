@@ -1,3 +1,36 @@
+
+#CONFIGURANDO  AMBIENTE
+##estrutura de pasta
+>/opt/pj
+>/opt/pj/patches
+##Arquivos devem estar exatamente como no repositorio
+>/opt/pj/*arquivos
+
+
+#DEPENDENCIAS 
+>sudo apt-get install libc6-dev-i386 lib32z1 default-jdk lldb  	libncurses5
+
+libncurses.so.5:
+ 	libncurses5
+
+##EXPORTAR VARIAVEL DE AMBIENTE  DO SDK
+export ANDROID_HOME=/opt/pj/tools/android-sdk-linux/platform-tools
+export ANDROID_ROOT=/opt/pj/tools/android-sdk-linux/platform-tools
+export ANDROID_SDK_ROOT=/opt/pj/tools/android-sdk-linux/platform-tools
+
+## EXPORTAR VARIAVEL DE AMBIENTE DO NDK
+export ANDROID_NDK_HOME=/opt/pj/tools/android-ndk-r13b
+export ANDROID_NDK_ROOT=/opt/pj/tools/android-ndk-r13b
+export ANDROID_NDK_ROOT=/opt/pj/tools/android-ndk-r13b
+
+#EXPORT PATH SDK E NDK
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools
+
+
+
+
+
+
 # PJSIP Android Builder
 Easily build PJSIP with: OpenSSL, OpenH264, Opus and G.729 (without Intel IPP) for Android.
 
