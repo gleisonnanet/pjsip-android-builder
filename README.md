@@ -3,7 +3,7 @@
 ##estrutura de pasta
 >/opt/pj
 >/opt/pj/patches
-##Arquivos devem estar exatamente como no repositorio
+>os arquivos devem estar exatamente como no repositorio
 >/opt/pj/*arquivos
 
 
